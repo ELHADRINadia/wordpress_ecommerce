@@ -1,0 +1,20 @@
+2022-05-27T13:47:18+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class contact does not have a method "load_assets" in C:\xampp\htdocs\wordpress ecommerce\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\xampp\htdocs\wordpress ecommerce\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\wordpress ecommerce\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress ecommerce\wp-includes\script-loader.php(2115): do_action('wp_enqueue_scri...')
+#3 C:\xampp\htdocs\wordpress ecommerce\wp-includes\class-wp-hook.php(307): wp_enqueue_scripts('')
+#4 C:\xampp\htdocs\wordpress ecommerce\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\wordpress ecommerce\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress ecommerce\wp-includes\general-template.php(3042): do_action('wp_head')
+#7 C:\xampp\htdocs\wordpress ecommerce\wp-content\themes\astra\header.php(26): wp_head()
+#8 C:\xampp\htdocs\wordpress ecommerce\wp-includes\template.php(770): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\wordpress ecommerce\wp-includes\template.php(716): load_template('C:\\xampp\\htdocs...', true, Array)
+#10 C:\xampp\htdocs\wordpress ecommerce\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#11 C:\xampp\htdocs\wordpress ecommerce\wp-content\themes\astra\page.php(20): get_header()
+#12 C:\xampp\htdocs\wordpress ecommerce\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress ecommerce\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress ecommerce\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown dans C:\xampp\htdocs\wordpress ecommerce\wp-includes\class-wp-hook.php à la ligne 307
+
